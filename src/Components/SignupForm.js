@@ -83,7 +83,7 @@ const SignupForm = () => {
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>
-                Already a user? <Link href='' color={'blue.400'}>Login</Link>
+                Already a user? <Link href='/diagon-ally-front' color={'blue.400'}>Login</Link>
               </Text>
             </Stack>
           </Stack>
