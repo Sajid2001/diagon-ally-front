@@ -17,9 +17,9 @@ function App() {
       <BrowserRouter basename='/diagon-ally-front'>
         <Navbar/>
           <Routes>
-            <Route path='/' element = {!user ? <LoginPage/> : <Navigate to="/account"/>}/>
-            <Route path='/signup' element = {!user ? <SignupPage/> : <Navigate to="/account"/>}/>
-            <Route path='/account' element = { user ? <AccountPage/> : <Navigate to="/" />}>
+            <Route path='/' element = {!user ? <LoginPage/> : <Navigate to="account"/>}/>
+            <Route path='/signup' element = {!user ? <SignupPage/> : <Navigate to="account"/>}/>
+            <Route path='account' element = { user ? <AccountPage/> : <Navigate to="/" />}>
               <Route path="/account" element = {<Navigate replace to="home"/>}/>
               <Route path='home' element = {<Dashboard/>}/>
               <Route path='add' element = {<MakeCategoryPage/>}/>

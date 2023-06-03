@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <Flex as="nav" px="40px" py="20px" alignItems="center" gap="10px">
         <Heading as="h1">
-          <Link href='account/home' _hover={{textDecoration:"none"}}>DiagonAlly</Link>
+          <Link href='/account/home' _hover={{textDecoration:"none"}}>DiagonAlly</Link>
         </Heading>
         <Spacer/>
         {user && (
