@@ -60,7 +60,7 @@ const LoginForm = () => {
             {error && <Text textAlign='center' color='red'>{error}</Text>}
             <Stack>
               <Text align={'center'}>
-                Don't have an account? <Link href='/diagon-ally-front/signup' color={'blue.400'}>Sign Up</Link>
+                Don't have an account? <Link href='/signup' color={'blue.400'}>Sign Up</Link>
               </Text>
             </Stack>
           </Stack>

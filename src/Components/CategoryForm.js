@@ -1,5 +1,16 @@
 import React, { useState } from 'react'
-import { Box, Button, FormControl,Input, FormHelperText, FormLabel, Text} from '@chakra-ui/react';
+import 
+{ 
+  Box, 
+  Button, 
+  FormControl,
+  Input, 
+  FormHelperText, 
+  FormLabel,
+  Link, 
+  Text,
+  Stack } 
+  from '@chakra-ui/react';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import { useCategoriesContext } from '../hooks/useCategoriesContext'
@@ -55,7 +66,13 @@ const CategoryForm = () => {
       <Button p="10px" m="8px" colorScheme="teal" onClick={handleSubmit}>
         Add
       </Button>
+      
     </Box>
+    <Stack pt={1}>
+          <Text align={'left'} px="15px">
+            <Link href='/account/home' color={'blue.400'}> ← Home</Link>
+          </Text>
+      </Stack>
     {error && <Text rounded="lg"  textAlign='center' color='red'>{error}</Text>}
     </>
   )
