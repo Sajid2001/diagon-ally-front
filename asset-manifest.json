@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/diagon-ally-front/static/css/main.e6c13ad2.css",
-    "main.js": "/diagon-ally-front/static/js/main.597af664.js",
+    "main.js": "/diagon-ally-front/static/js/main.c666acd7.js",
     "index.html": "/diagon-ally-front/index.html",
     "main.e6c13ad2.css.map": "/diagon-ally-front/static/css/main.e6c13ad2.css.map",
-    "main.597af664.js.map": "/diagon-ally-front/static/js/main.597af664.js.map"
+    "main.c666acd7.js.map": "/diagon-ally-front/static/js/main.c666acd7.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.597af664.js"
+    "static/js/main.c666acd7.js"
   ]
 }
