@@ -3,7 +3,7 @@ import Dashboard from './Pages/Dashboard';
 import LoginPage from './Pages/LoginPage';
 import MakeCategoryPage from './Pages/MakeCategoryPage';
 import { ChakraProvider } from '@chakra-ui/react'
-import { BrowserRouter, Routes,Route, Navigate } from 'react-router-dom';
+import { HashRouter,BrowserRouter, Routes,Route, Navigate } from 'react-router-dom';
 import SignupPage from './Pages/SignupPage';
 import Navbar from './Components/Navbar';
 import { useAuthContext } from './hooks/useAuthContext';
@@ -14,7 +14,7 @@ function App() {
     <ChakraProvider>
       <div className="App">
         
-        <BrowserRouter basename='/diagon-ally-front'>
+        <HashRouter>
         <Navbar/>
           <Routes>
             <Route path='' element = {!user ? <LoginPage/> : <Navigate to="/account"/>}/>
@@ -25,7 +25,7 @@ function App() {
               <Route path='add' element = {<MakeCategoryPage/>}/>
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </ChakraProvider>
   );
