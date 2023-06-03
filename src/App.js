@@ -14,7 +14,7 @@ function App() {
     <ChakraProvider>
       <div className="App">
         
-      <HashRouter>
+      <BrowserRouter basename='/diagon-ally-front'>
         <Navbar/>
           <Routes>
             <Route path='' element = {!user ? <LoginPage/> : <Navigate to="/account"/>}/>
@@ -25,7 +25,7 @@ function App() {
               <Route path='add' element = {<MakeCategoryPage/>}/>
             </Route>
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </ChakraProvider>
   );
