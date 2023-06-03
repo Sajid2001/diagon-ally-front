@@ -14,7 +14,7 @@ function App() {
     <ChakraProvider>
       <div className="App">
         
-        <BrowserRouter>
+        <BrowserRouter basename='/diagon-ally-front'>
         <Navbar/>
           <Routes>
             <Route path='/' element = {!user ? <LoginPage/> : <Navigate to="/account"/>}/>
