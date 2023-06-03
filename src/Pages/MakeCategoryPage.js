@@ -13,7 +13,7 @@ const MakeCategoryPage = () => {
           fontWeight={600}
           fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
           lineHeight={'110%'}>
-          Make Categories
+          Make A Category
         </Heading>
         <CategoryForm/>
         </Stack>

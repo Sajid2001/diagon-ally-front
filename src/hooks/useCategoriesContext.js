@@ -1,0 +1,12 @@
+import { CategoriesContext } from "../Contexts/CategoriesContext";
+import { useContext } from "react";
+
+export const useCategoriesContext = () => {
+    const context = useContext(CategoriesContext)
+
+    if (!context) {
+        throw Error('useCategoriesContext must be used inside a CategoriesContext provider')
+    }
+
+    return context;
+}

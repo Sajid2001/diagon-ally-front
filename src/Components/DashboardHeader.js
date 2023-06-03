@@ -6,7 +6,7 @@ const DashboardHeader = () => {
 
   const navigate = useNavigate();
 
-  const navigateToForm = () => navigate('/add')
+  const navigateToForm = () => navigate('/account/add')
 
   return (
       <Stack

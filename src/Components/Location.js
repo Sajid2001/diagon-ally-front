@@ -1,15 +1,27 @@
 import React from 'react'
 import {Heading, Card, CardHeader, CardBody, Button} from '@chakra-ui/react'
 import axios from 'axios'
+import { useCategoriesContext } from '../hooks/useCategoriesContext'
+import { useAuthContext } from '../hooks/useAuthContext'
 
 const Location = (props) => {
 
+  const { dispatch } = useCategoriesContext();
+  const { user } = useAuthContext();
+
   const removeLocation = (e) => {
     e.preventDefault();
-    axios.put(`${process.env.REACT_APP_CATEGORIES_QUERY_URL}${props.categoryID}/${props.locationID}`, {})
+    if(!user){
+      return;
+    }
+    axios.put(`${process.env.REACT_APP_CATEGORIES_QUERY_URL}${props.categoryID}/${props.locationID}`,{}, {
+      headers:{
+        'Authorization':`Bearer ${user.token}`
+      }
+    })
     .then(response => {
       console.log(response);
-      window.location.reload();
+      dispatch({type:'DELETE_LOCATION', payload:{categoryId: props.categoryID,locationId: props.locationID}})
     })
     .catch(err => {
       console.log(err);
@@ -17,8 +29,8 @@ const Location = (props) => {
   }
 
   return (
-    <div>
-        <Card maxW="md" bgColor={'teal.100'}>
+    <div key={props.locationID}>
+        <Card bgColor={'teal.100'}>
             <CardHeader>
                 <Heading size='xl'>{props.location.name}</Heading>
                 <CardBody>
