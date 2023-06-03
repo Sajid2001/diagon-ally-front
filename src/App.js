@@ -14,7 +14,7 @@ function App() {
     <ChakraProvider>
       <div className="App">
         
-        <HashRouter>
+      <HashRouter>
         <Navbar/>
           <Routes>
             <Route path='' element = {!user ? <LoginPage/> : <Navigate to="/account"/>}/>
