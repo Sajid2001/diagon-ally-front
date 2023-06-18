@@ -16,7 +16,11 @@ Check out the backend code here: https://github.com/Sajid2001/diagon-ally-server
 
 DiagonAlly is very simple to use. Just create a category, search any location you have in mind for that category, and save it. 
 
+### Category Creation
+
 ![ezgif com-video-to-gif](https://github.com/Sajid2001/diagon-ally-front/assets/60523377/68228faf-f795-4c4a-9058-39609fe8aba5)
+
+### Location Lookup
 
 ![ezgif com-video-to-gif (1)](https://github.com/Sajid2001/diagon-ally-front/assets/60523377/1f5db952-42af-4023-b4a3-97693192bce9)
 
