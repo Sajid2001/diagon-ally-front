@@ -55,5 +55,5 @@ The log in is, in fact, working. The issue is that the deployed server shuts dow
 
 ### What are plans for the future with this project?
 
-As mentioned earlier, a loading message will be added in the near future. Another possible feature is for multiple locations to be shown before being added to a category. If you have any further suggestions, let the proejct owner know so they can happen.
+As mentioned earlier, a loading message will be added in the near future. Another possible feature is for multiple locations to be shown before being added to a category. If you have any further suggestions, let the project owner know so they can happen.
 
