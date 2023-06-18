@@ -4,13 +4,22 @@
 
 Have you ever had a discussion with your friends about your favorite places? At some point, you start to realize that there are too many places you like to go to and remembering all of them has become a hassle. This is where DiagonAlly comes in. 
 
-* Enables quick lookup for any location in the world, powered by the Google Maps API
+* Enables quick lookup for any location in the world, powered by Google Maps
 * Allows for easier sorting of these locations through categories
 * Secure user authentication and data protection through the use of bcrypt and JWT
 
 Check out the deployed website here: https://diagon-ally-front.vercel.app/
 
 Check out the backend code here: https://github.com/Sajid2001/diagon-ally-server
+
+## Technologies Used
+
+* React
+* NodeJS
+* MongoDB
+* ChakraUI
+* Google Maps API
+* JWT
 
 ## How to use
 
