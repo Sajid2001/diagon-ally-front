@@ -35,13 +35,13 @@ For database access, you can either create your own mongodb database and plug in
 ### Environment Variables Needed:
 
 Backend:
-```PORT``` = Your port number of choice (anything but 3000)
-```MONGODB_URI``` = The connection URI to your MongoDB database
-```GOOGLE_API_KEY``` = You can get this by signing up for a Google Maps API key
-```JWT_SECRET```= You can go to an online password generator and slot this into your environment variables
+* ```PORT``` = Your port number of choice (anything but 3000)
+* ```MONGODB_URI``` = The connection URI to your MongoDB database
+* ```GOOGLE_API_KEY``` = You can get this by signing up for a Google Maps API key
+* ```JWT_SECRET```= You can go to an online password generator and slot this into your environment variables
 
 Frontend:
-```REACT_APP_API_URL``` = your server link, whether it's deployed or on localhost
+* ```REACT_APP_API_URL``` = your server link, whether it's deployed or on localhost
 
 ## Find any bugs?
 
